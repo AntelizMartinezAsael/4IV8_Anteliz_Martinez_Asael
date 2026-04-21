@@ -1,37 +1,47 @@
-function validar(formulario){
-    //vamos a crear una funcion para validar un numero minimo de caracteres en el nombre
-    if(formulario.nombre.value.length < 3){
+function validar(formulario) {
+    // Validar longitud del nombre
+    if (formulario.nombre.value.trim().length < 3) {
         alert("por favor ingrese un nombre mayor de 3 caracteres");
         formulario.nombre.focus();
         return false;
     }
 
-    var abcOK = "1234567890";
-
-    var checkString = formulario.nombre.value;
-
+    // Validar que la edad sean solo números
+    var edadTexto = formulario.edad.value;
+    var abcOK = "0123456789";
     var allValid = true;
 
-    //tenemos que ir comparando y recorriendo la cadena caracter por caracter
-    for(var i = 0; i < checkString.length; i++){
-        //necesito la cadena pasarla a caracter
-        var caracteres = checkString.charAt(i);
-        for(var j = 0; j < abcOK.length; j++){
-            if(caracteres == abcOK.charAt(j)){
+    for (var i = 0; i < edadTexto.length; i++) {
+        var caracteres = edadTexto.charAt(i);
+        var esNumero = false;
+        for (var j = 0; j < abcOK.length; j++) {
+            if (caracteres == abcOK.charAt(j)) {
+                esNumero = true;
                 break;
             }
         }
-        if(j == abcOK.length){
+        if (!esNumero) {
             allValid = false;
-            break
+            break;
         }
     }
-    if(!allValid){
-        alert("Por favor escriba unicamente numeros en el campo edad")
+
+    if (!allValid || edadTexto === "") {
+        alert("Por favor escriba unicamente numeros en el campo edad");
         formulario.edad.focus();
         return false;
     }
-    //algo.algo@algo.algo
 
-    var correoelectronico = /^[^@\s]+[^@\.\s]+(.[^@.s]+)+$/;
+    // Validar formato de email
+    var emailValor = formulario.email.value;
+    var correoelectronico = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    
+    if (!correoelectronico.test(emailValor)) {
+        alert("Por favor ingrese un correo electronico valido");
+        formulario.email.focus();
+        return false;
+    }
+
+    alert("Formulario validado con éxito. Enviando datos...");
+    return true;
 }

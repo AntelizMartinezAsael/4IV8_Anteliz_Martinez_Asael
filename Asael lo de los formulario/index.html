@@ -1,71 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de formulario y su Validacion</title>
-    <script src="./02Frmulario/JS/Validarformulario.js"></script>
+    <title>Examen Formulario - Anteliz Martinez Asael</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Barriecito&family=Bubblegum+Sans&family=Gamja+Flower&family=Lancelot&family=Jeju+Hallasan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="form-container">
+            <h1>Ejemplo de Formulario</h1>
+            <h2>Validación de Datos</h2>
             <p>
-                Todos los formulario que estan en
-                internet tienen metodos de 
-                programacion por defecto. Estos 
-                metodos nos sirven para poder hacer 
-                las acciones principales como son: 
-                Acciones para poderse conectar con 
-                los servidores, a traves de las 
-                Arquitecturas Cliente Servidor.
-                Es que vamos a tener por defecto que
-                todos los formularios utilizan el
-                metodo GET, y el segundo metodo
-                principal es POST, aunque existen
-                otros metodos que se encargan del 
-                intercambio de informacion
-                GET: este metodo envia por medio de
-                la URL toda la informacion a traves del 
-                navegador
-
-                mas vulnerable de todos, derivado a 
-                que se puedem generar inyecciones del
-                codigo.
-                POST: este metodo se encarga de 
-                registrar una nueva entrada al
-                sistema, tambien utiliza la URL
-                como envio por defecto; pero su facultad
-                es poder ocultarla, esto significa
-                que los datos no son visibles para el
-                usuario comun en el navegador.
-
-                <form name="formulario" method="GET" id="formulario" onsubmit="return validar(this)">
-                    <label for="nombre">
-                        Nombre:
-                    </label>
-                    <br>
-                    <input type="text" name="nombre" id="nombre" placeholder="por favor escriba aqui su nombre">
-                    <br>
-                    <label for="edad">
-                        Edad:
-                    </label>
-                    <br>
-                    <input type="number" name="edad" id="edad" placeholder="por favor escriba aqui su edad">
-                    <br>
-                    <label for="email">
-                        Email:
-                    </label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="por favor escriba aqui su correo electronico">
-                    <br>
-                    <input type="submit" name="enviar" value="Enviar Registro">
-                    <br>
-                    <input type="reset" name="orrar" value="Borrar Datos">
-
-                </form>
+                Todos los formularios que están en internet tienen métodos de programación por defecto. 
+                Estos métodos nos sirven para poder hacer las acciones principales como son: 
+                Acciones para poderse conectar con los servidores, a través de las Arquitecturas Cliente Servidor.
+                Es que vamos a tener por defecto que todos los formularios utilizan el método GET, 
+                y el segundo método principal es POST.
             </p>
+
+            <form name="formulario" method="GET" id="formulario" onsubmit="return validar(this)">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="por favor escriba aqui su nombre">
+
+                <label for="edad">Edad:</label>
+                <input type="text" name="edad" id="edad" placeholder="por favor escriba aqui su edad">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="por favor escriba aqui su correo electronico">
+
+                <div class="buttons">
+                    <input type="submit" name="enviar" value="Enviar Registro">
+                    <input type="reset" name="borrar" value="Borrar Datos">
+                </div>
+            </form>
+
+            <div class="footer-signature">
+                <h3>Anteliz Martinez Asael - 4IV8</h3>
+            </div>
         </div>
     </div>
-    
+    <script src="Validarformulario.js"></script>
 </body>
 </html>
