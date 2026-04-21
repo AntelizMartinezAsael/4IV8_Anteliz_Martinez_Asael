@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos JS - Anteliz Martinez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Resolución de Problemas Secuenciales</h1>
+        <h5 class="datos-alumno">Anteliz Martinez Asael - 4IV8</h5>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>1. Inversión Bancaria (2%)</h3>
+            <p>Calcula la ganancia tras un mes.</p>
+            <input type="text" id="p1-capital" placeholder="Capital a invertir">
+            <div id="err-1" class="error">Monto inválido</div>
+            <button onclick="ejercicio1()">Calcular</button>
+            <div id="res-1" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h3>2. Sueldo y Comisiones</h3>
+            <p>Sueldo base + 10% de 3 ventas.</p>
+            <input type="text" id="p2-base" placeholder="Sueldo Base">
+            <input type="text" id="p2-v1" placeholder="Venta 1">
+            <input type="text" id="p2-v2" placeholder="Venta 2">
+            <input type="text" id="p2-v3" placeholder="Venta 3">
+            <div id="err-2" class="error">Datos inválidos</div>
+            <button onclick="ejercicio2()">Calcular Total</button>
+            <div id="res-2" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h3>3. Descuento del 15%</h3>
+            <p>Total a pagar con descuento aplicado.</p>
+            <input type="text" id="p3-monto" placeholder="Total compra">
+            <div id="err-3" class="error">Monto inválido</div>
+            <button onclick="ejercicio3()">Calcular</button>
+            <div id="res-3" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h3>4. Calificación Algoritmos</h3>
+            <p>55% Parciales, 30% Examen, 15% Trabajo.</p>
+            <input type="text" id="p4-par" placeholder="Promedio Parciales">
+            <input type="text" id="p4-exa" placeholder="Examen Final">
+            <input type="text" id="p4-tra" placeholder="Trabajo Final">
+            <div id="err-4" class="error">Notas del 0 al 10</div>
+            <button onclick="ejercicio4()">Calcular Final</button>
+            <div id="res-4" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h3>5. Porcentaje Género</h3>
+            <p>Hombres y mujeres en el grupo.</p>
+            <input type="text" id="p5-h" placeholder="Num. Hombres">
+            <input type="text" id="p5-m" placeholder="Num. Mujeres">
+            <div id="err-5" class="error">Ingresa números enteros</div>
+            <button onclick="ejercicio5()">Calcular %</button>
+            <div id="res-5" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h3>6. Calcular Edad</h3>
+            <p>Edad basada en fecha de nacimiento.</p>
+            <input type="date" id="p6-fecha">
+            <div id="err-6" class="error">Fecha inválida</div>
+            <button onclick="ejercicio6()">Calcular Edad</button>
+            <div id="res-6" class="result"></div>
+        </div>
+    </div>
+
+    <script src="Validarformulario.js"></script>
+</body>
+</html>

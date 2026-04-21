@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Bubblegum+Sans&family=Gamja+Flower&family=Lancelot&family=Amaranth:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --color-1: #584B53; /* Gris oscuro */
+    --color-2: #9D5C63; /* Rojizo/Marrón */
+    --color-3: #D6E3F8; /* Azul muy claro */
+    --color-4: #FEF5EF; /* Crema */
+    --color-5: #E4BB97; /* Arena */
+}
+
+body {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    font-family: 'Amaranth', sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 { 
+    font-family: 'Barriecito', cursive; 
+    font-size: 48px; 
+    margin-bottom: 5px;
+}
+
+.datos-alumno {
+    font-family: 'Lancelot', serif;
+    font-size: 24px; /* Un poco más grande para que se lea bien */
+    color: var(--color-2);
+    margin: 0;
+}
+
+h3 { 
+    font-family: 'Bubblegum Sans', cursive; 
+    font-size: 28px; 
+    color: var(--color-2);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--color-4);
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid var(--color-5);
+    box-shadow: 6px 6px 0px var(--color-2);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid var(--color-5);
+    border-radius: 8px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 18px;
+}
+
+button {
+    background: var(--color-2);
+    color: var(--color-4);
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 20px;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: var(--color-1);
+}
+
+.error { 
+    color: #ef4444; 
+    font-family: 'Lancelot', serif;
+    font-size: 16px; 
+    display: none; 
+}
+
+.result {
+    margin-top: 15px;
+    padding: 15px;
+    background: var(--color-5);
+    color: var(--color-1);
+    border-radius: 8px;
+    display: none;
+    font-weight: bold;
+    border: 2px dashed var(--color-2);
+}
