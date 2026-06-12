@@ -4,59 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de CRUD</title>
-    </head>
+    <link rel="stylesheet" href="./style.css">
+</head>
 <body>
-    <header>
-        <h1>Ejemplo de Gestión de Usuarios</h1>
-    </header>
-    <main>
-        <section class="formulario-section">  
-            <h2 id="form-titulo">Agregar Nuevo Usuario</h2>
-            <form id="form-usuario">
-                <input type="hidden" id="id-usuario">
-                
-                <div class="campo">
-                    <label for="nombre">Nombre Completo</label>
-                    <input type="text" id="nombre" placeholder="Aquí va tu nombre" maxlength="60" required>
-                    <span id="error-nombre" class="error"></span>
-                </div>
+    <div class="container-main">
+        <div class="caratula">
+            <h2 class="titulo-caratula">Caratula</h2>
+            <div class="datos">
+                <p><strong>Nombre:</strong> Anteliz Martinez Asael</p>
+                <p><strong>Grupo:</strong> 4IV8</p>
+                <p><strong>Boleta:</strong> 2025090657</p>
+            </div>
+        </div>
 
-                <div class="campo">
-                    <label for="fecha_nacimiento">Fecha de Nacimiento</label>
-                    <input type="date" id="fecha_nacimiento" required>
-                    <span id="error-fecha" class="error"></span>
-                </div>
+        <header>
+            <h1>Ejemplo de Gestión de Usuarios</h1>
+        </header>
 
-                <div class="campo">
-                    <label for="nota">Nota (0-10)</label>
-                    <input type="number" id="nota" placeholder="Por ejemplo 8.5" min="0" max="10" step="0.1" required>
-                    <span id="error-nota" class="error"></span>
-                </div>
+        <main>
+            <section class="formulario-section">  
+                <h2 id="form-titulo">Agregar Nuevo Usuario</h2>
+                <form id="form-usuario">
+                    <input type="hidden" id="id-usuario">
+                    
+                    <div class="campo">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Aquí va tu nombre" maxlength="60" required>
+                        <span id="error-nombre" class="error"></span>
+                    </div>
 
-                <button type="submit" id="btn-guardar">Guardar</button>
-                <button type="button" id="btn-cancelar" class="btn-secundario" style="display: none;">Cancelar</button>
-            </form>    
-        </section>
+                    <div class="campo">
+                        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" id="fecha_nacimiento" required>
+                        <span id="error-fecha" class="error"></span>
+                    </div>
 
-        <section class="table-section">
-            <h2>Lista de Usuarios</h2>
-            <p id="mensaje-carga">Cargando Usuarios...</p>
-            <p id="mensaje-vacio" style="display: none;">No hay Usuarios Registrados</p>
-            <table id="tabla-usuarios" style="display: none;">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Fecha de Nacimiento</th>
-                        <th>Nota</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody-usuarios">
+                    <div class="campo">
+                        <label for="nota">Nota (0-10)</label>
+                        <input type="number" id="nota" placeholder="Por ejemplo 8.5" min="0" max="10" step="0.1" required>
+                        <span id="error-nota" class="error"></span>
+                    </div>
+
+                    <button type="submit" id="btn-guardar">Guardar</button>
+                    <button type="button" id="btn-cancelar" class="btn-secundario" style="display: none;">Cancelar</button>
+                </form>    
+            </section>
+
+            <section class="table-section">
+                <h2>Lista de Usuarios</h2>
+                <p id="mensaje-carga">Cargando Usuarios...</p>
+                <p id="mensaje-vacio" style="display: none;">No hay Usuarios Registrados</p>
+                <table id="tabla-usuarios" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Nota</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-usuarios">
                     </tbody>
-            </table>
-        </section>
-    </main>
+                </table>
+            </section>
+        </main>
+
+        <div class="container-footer">
+            <footer>
+                <a href="../../index.html">Regresar a Pagina Principal</a>
+            </footer>
+        </div>
+    </div>
 
     <script src="./js/app.js"></script>
 </body>
