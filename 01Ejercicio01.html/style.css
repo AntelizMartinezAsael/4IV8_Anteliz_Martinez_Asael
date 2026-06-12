@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Amaranth';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/amaranth/v19/KtkuALODe433f0j1zPnC.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Barriecito';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/barriecito/v18/WWXXlj-CbBOSLY2QTuY_KdU.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Bubblegum Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bubblegumsans/v22/AYCSpXb_Z9EORv1M5QTjEzMEtdaH.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Gamja Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gamjaflower/v26/6NUR8FiKJg-Pa0rM6uN40Z4kyQ.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Jeju Hallasan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/jejuhallasan/v22/tDbX2oZ7nYd6gR3tO2uG8B4H.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Lancelot';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lancelot/v28/J7acnppxBGtQEulG4JY4.ttf) format('truetype');
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      background-color: #E4B897;
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #584B53;
+      line-height: 1.6;
+      padding: 20px;
+  }
+  
+  .container-main {
+      max-width: 900px;
+      margin: 0 auto;
+  }
+  
+  .caratula {
+      background-color: #D6E3F8;
+      border: 3px solid #584B53;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+      box-shadow: 5px 5px 0px #9D5C63;
+  }
+  
+  .titulo-caratula {
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 32px;
+      color: #9D5C63;
+      margin-bottom: 15px;
+  }
+  
+  .datos p {
+      font-family: 'Jeju Hallasan', sans-serif;
+      font-size: 20px;
+      color: #584B53;
+      margin: 8px 0;
+      padding: 6px;
+      background-color: #FEF5EF;
+      border-radius: 8px;
+      border: 1px solid #E4B897;
+  }
+  
+  .datos p strong {
+      color: #9D5C63;
+  }
+  
+  .Ejercicio1 {
+      background-color: #FEF5EF;
+      border: 3px solid #584B53;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Ejercicio1 label {
+      display: block;
+      font-family: 'Jeju Hallasan', sans-serif;
+      font-size: 28px;
+      color: #9D5C63;
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  
+  .container-table {
+      max-width: 700px;
+      margin: 0 auto;
+  }
+  
+  .table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #FEF5EF;
+      border: 2px solid #E4BB97;
+      border-radius: 15px;
+      overflow: hidden;
+  }
+  
+  .table td {
+      padding: 18px 15px;
+      border-bottom: 1px solid #E4BB97;
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #584B53;
+  }
+  
+  .table td:first-child {
+      font-weight: bold;
+      color: #584B53;
+      width: 55%;
+  }
+  
+  .table tr:last-child td {
+      border-bottom: none;
+  }
+  
+  input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #E4BB97;
+      border-radius: 10px;
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #584B53;
+      background-color: #FFFFFF;
+  }
+  
+  input[type="button"] {
+      background-color: #9D5C63;
+      color: #FEF5EF;
+      font-family: 'Gamja Flower', cursive;
+      font-size: 22px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+  }
+  
+  input[type="button"]:hover {
+      background-color: #584B53;
+      transform: scale(1.03);
+  }
+  
+  input[readonly] {
+      background-color: #D6E3F8;
+      font-weight: bold;
+  }
+  
+  .container-footer {
+      text-align: center;
+      margin-top: 30px;
+  }
+  
+  .container-footer a {
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #9D5C63;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid #9D5C63;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      background-color: #FEF5EF;
+  }
+  
+  .container-footer a:hover {
+      background-color: #9D5C63;
+      color: #FEF5EF;
+  }
+  
+  @media (max-width: 768px) {
+      .Ejercicio1 {
+          padding: 25px;
+          margin: 10px;
+      }
+      .table td {
+          display: block;
+          width: 100%;
+          text-align: center;
+      }
+  }

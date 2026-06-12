@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Amaranth';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/amaranth/v19/KtkuALODe433f0j1zPnC.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Barriecito';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/barriecito/v18/WWXXlj-CbBOSLY2QTuY_KdU.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Bubblegum Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bubblegumsans/v22/AYCSpXb_Z9EORv1M5QTjEzMEtdaH.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Gamja Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gamjaflower/v26/6NUR8FiKJg-Pa0rM6uN40Z4kyQ.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Jeju Hallasan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/jejuhallasan/v22/tDbX2oZ7nYd6gR3tO2uG8B4H.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Lancelot';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lancelot/v28/J7acnppxBGtQEulG4JY4.ttf) format('truetype');
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      background-color: #E4B897;
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #584B53;
+      line-height: 1.6;
+      padding: 20px;
+  }
+  
+  .container-main {
+      max-width: 900px;
+      margin: 0 auto;
+  }
+  
+  .caratula {
+      background-color: #D6E3F8;
+      border: 3px solid #584B53;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+      box-shadow: 5px 5px 0px #9D5C63;
+  }
+  
+  .titulo-caratula {
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 32px;
+      color: #9D5C63;
+      margin-bottom: 15px;
+  }
+  
+  .datos p {
+      font-family: 'Jeju Hallasan', sans-serif;
+      font-size: 20px;
+      color: #584B53;
+      margin: 8px 0;
+      padding: 6px;
+      background-color: #FEF5EF;
+      border-radius: 8px;
+      border: 1px solid #E4B897;
+  }
+  
+  .datos p strong {
+      color: #9D5C63;
+  }
+  
+  header {
+      background-color: #FEF5EF;
+      border: 3px solid #584B53;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+      box-shadow: 8px 8px 0px #9D5C63;
+  }
+  
+  header h1 {
+      font-family: 'Barriecito', cursive;
+      font-size: 36px;
+      color: #584B53;
+      margin-bottom: 10px;
+  }
+  
+  .datos-alumno {
+      font-family: 'Lancelot', serif;
+      font-size: 18px;
+      color: #9D5C63;
+  }
+  
+  .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+  }
+  
+  .card {
+      background-color: #FEF5EF;
+      border: 2px solid #584B53;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 5px 5px 0px #9D5C63;
+  }
+  
+  .card h3 {
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 22px;
+      color: #9D5C63;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+  
+  .card p {
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #584B53;
+      margin-bottom: 12px;
+      text-align: center;
+  }
+  
+  .card input[type="text"],
+  .card input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #E4B897;
+      border-radius: 8px;
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #584B53;
+      margin-bottom: 10px;
+      background-color: #FFFFFF;
+  }
+  
+  .card button {
+      width: 100%;
+      background-color: #9D5C63;
+      color: #FEF5EF;
+      font-family: 'Gamja Flower', cursive;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  .card button:hover {
+      background-color: #584B53;
+      transform: scale(1.02);
+  }
+  
+  .error {
+      font-family: 'Amaranth', sans-serif;
+      font-size: 13px;
+      color: #ff4444;
+      text-align: center;
+      margin-bottom: 8px;
+      display: none;
+  }
+  
+  .result {
+      font-family: 'Amaranth', sans-serif;
+      font-size: 15px;
+      color: #584B53;
+      text-align: center;
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #D6E3F8;
+      border-radius: 6px;
+      font-weight: bold;
+  }
+  
+  .container-footer {
+      text-align: center;
+      margin-top: 30px;
+  }
+  
+  .container-footer a {
+      font-family: 'Amaranth', sans-serif;
+      font-size: 14px;
+      color: #9D5C63;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid #9D5C63;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      background-color: #FEF5EF;
+  }
+  
+  .container-footer a:hover {
+      background-color: #9D5C63;
+      color: #FEF5EF;
+  }

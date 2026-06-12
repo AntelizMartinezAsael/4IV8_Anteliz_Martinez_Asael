@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Formulario - Anteliz Martinez Asael</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="caratula">
+            <h2 class="titulo-caratula">Caratula</h2>
+            <div class="datos">
+                <p><strong>Nombre:</strong> Anteliz Martinez Asael</p>
+                <p><strong>Grupo:</strong> 4IV8</p>
+                <p><strong>Boleta:</strong> 2025090657</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h1>Ejemplo de Formulario</h1>
+            <h2>Validación de Datos</h2>
+            <p>
+                Todos los formularios que están en internet tienen métodos de programación por defecto. 
+                Estos métodos nos sirven para poder hacer las acciones principales como son: 
+                Acciones para poderse conectar con los servidores, a través de las Arquitecturas Cliente Servidor.
+                Es que vamos a tener por defecto que todos los formularios utilizan el método GET, 
+                y el segundo método principal es POST.
+            </p>
+
+            <form name="formulario" method="GET" id="formulario" onsubmit="return validar(this)">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="por favor escriba aqui su nombre">
+
+                <label for="edad">Edad:</label>
+                <input type="text" name="edad" id="edad" placeholder="por favor escriba aqui su edad">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="por favor escriba aqui su correo electronico">
+
+                <div class="buttons">
+                    <input type="submit" name="enviar" value="Enviar Registro">
+                    <input type="reset" name="borrar" value="Borrar Datos">
+                </div>
+            </form>
+
+            <div class="footer-signature">
+                <h3>Anteliz Martinez Asael - 4IV8</h3>
+            </div>
+        </div>
+
+        <div class="container-footer">
+            <footer>
+                <a href="../index.html">Regresar a Pagina Principal</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="Validarformulario.js"></script>
+</body>
+</html>
